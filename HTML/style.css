@@ -1,5 +1,19 @@
 body
 {
-
+width: 1920px;
+height: 1080px;
 background-image: url("https://images2.alphacoders.com/132/1322753.jpeg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+
+img
+{
+width:200px; 
+height: 200px;
+
+
 }
