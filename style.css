@@ -6,7 +6,7 @@ background-size:cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 display: flex; /* Usamos flexbox para alinear los elementos */
- background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url('https://images2.alphacoders.com/132/1322753.jpeg');
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url('https://images2.alphacoders.com/132/1322753.jpeg');
 
   
 
@@ -157,7 +157,8 @@ clip-path: polygon(0 0, 100% 0, 90% 80%, 50% 100%, 0% 100%);       /* COMENTAR *
 }
 
 
-.conteiner2{
+.conteiner2
+{
 
 
 	display: flex;
@@ -194,7 +195,8 @@ font-size: 25px;
 
 
 
-table{
+table
+{
 	width: 80%;
 	border-collapse: collapse; /* Fusiona los bordes de las celdas */
 	text-align: center
