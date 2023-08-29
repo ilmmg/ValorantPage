@@ -1,4 +1,4 @@
-body
+body /* CONTENIDO PRINCIPAL */ 
 {
 width: 1320px;
 height: 720px;
@@ -13,14 +13,14 @@ display: flex; /* Usamos flexbox para alinear los elementos */
 }
 
 
-img
+img /* IMAGENES DE LA TABLA */ 
 {
     width:50px; 
     height: 50px;
 
 }
 
-.barra
+.barra /* BARRA SUPERIOR CON LOGO */ 
 {
 
 position: fixed;
@@ -34,14 +34,14 @@ display: inline-block;
     top:0;
 }
 
-#logo
+#logo  /* LOGO DE BARRA SUPERIOR */ 
 {
 
 	width: 70px;
 	height: 70px;
 }
 
-#logo:hover
+#logo:hover   /* ESCALAR EL LOGO CUANDO APOYES EL MOUSE */ 
 {
 
  transform: scale(1.1);
@@ -51,7 +51,7 @@ display: inline-block;
 }
 
 
-.titulo
+.titulo   /* BARRA LATERAL */ 
 {
 
  position:fixed;
@@ -72,12 +72,13 @@ clip-path: polygon(0 0, 100% 0, 90% 80%, 50% 100%, 0% 100%);       /* COMENTAR *
 }
 
 
-.titulo h1 {
+.titulo h1   /* TITULO DE BARRA LATERAL */ 
+{
 	 font-size: 80px;
 
 }
 
-.duelistas
+.duelistas /* CUADRADO DUELISTAS */ 
 
 {
 
