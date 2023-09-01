@@ -1,15 +1,20 @@
-body /* CONTENIDO PRINCIPAL */  
-{
-width: 1320px;
-height: 720px;
-background-size:cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-display: flex; /* Usamos flexbox para alinear los elementos */
- background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url('https://images2.alphacoders.com/132/1322753.jpeg');
+* {
+    box-sizing: border-box;
+}
 
-  
+body
 
+/* CONTENIDO PRINCIPAL */
+    {
+    width: 1320px;
+    height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    /* Usamos flexbox para alinear los elementos */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent),
+        url("https://images2.alphacoders.com/132/1322753.jpeg");
 }
 
 img
@@ -18,6 +23,71 @@ img
     {
     width: 50px;
     height: 50px;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79, 79, 79, 0.7);
+    z-index: 1;
+    visibility: ;
+}
+
+.modal-content {
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.modal-content img {
+    width: 150px;
+    margin: 30px 8px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.close {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    ;
+    border-radius: 10px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.close p {
+    color: white;
+    font-weight: 400;
+}
+
+.close:hover {
+    background-color: hsl(180, 100%, 40%);
 }
 
 .barra
@@ -98,8 +168,9 @@ img
 }
 
 .iniciador
+
 /* CUADRADO INICIADOR */
- {
+    {
     padding: 20px;
     width: 250px;
     height: 320px;
@@ -110,13 +181,14 @@ img
     left: 500px;
     position: fixed;
     top: 300px;
-     /* Color azul con 80% de transparencia */
-     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    /* Color azul con 80% de transparencia */
+    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
 }
 
-.centinela 
+.centinela
+
 /* CUADRADO CENTINELA */
-{
+    {
     padding: 20px;
     width: 250px;
     height: 320px;
@@ -127,13 +199,14 @@ img
     left: 800px;
     position: fixed;
     top: 300px;
-     /* Color azul con 80% de transparencia */
-     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    /* Color azul con 80% de transparencia */
+    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
 }
 
 .controlador
+
 /* CUADRADO CONTROLADOR */
- {
+    {
     padding: 20px;
     width: 250px;
     height: 320px;
@@ -145,84 +218,89 @@ img
     left: 1100px;
     position: fixed;
     top: 300px;
-   
+
     /* Color azul con 80% de transparencia */
     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
-    
-    
-    
 }
 
-.conteiner 
-/* CONTIENE EL CONTEINER2 , LA BARRA SUPERIOR , LA BARRA LATERAL  */{
+.conteiner
+
+/* CONTIENE EL CONTEINER2 , LA BARRA SUPERIOR , LA BARRA LATERAL  */
+    {
     display: flex;
     /* Usamos flexbox para distribuir los elementos */
 }
 
-
 .conteiner2
+
 /* CONTIENE LOS CUADROS DE AGENTES */
-{
-
-
-	display: flex;
-    flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
-    padding: 20px; /* Espacio alrededor de los rectángulos */
-    flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
+    {
+    display: flex;
+    flex-wrap: wrap;
+    /* Los divs se ajustarán automáticamente a la línea siguiente */
+    padding: 20px;
+    /* Espacio alrededor de los rectángulos */
+    flex-grow: 1;
+    /* El contenido tomará el espacio restante */
+    /* BUSCAR FUNCION EXACTA*/
 }
 
-p 
+p
+
 /* DESCRIPCIÓN DE ROL */
-{
+    {
     text-align: center;
     font-family: Tahoma;
     color: white;
 }
 
-h3 
-/* NOMBRE DE AGENTES */{
+h3
+
+/* NOMBRE DE AGENTES */
+    {
     text-align: center;
     font-family: Tahoma;
     color: white;
     font-size: 25px;
 }
 
-.num 
+.num
+
 /* NUMERO DE ROL */
-{
+    {
     text-align: center;
     font-family: Tahoma;
     color: red;
     font-size: 25px;
 }
 
-
-
-
 table
-/* CUADRICULAS DE AGENTES */
-{
-	width: 80%;
-	border-collapse: collapse; /* Fusiona los bordes de las celdas */
-	text-align: center
 
+/* CUADRICULAS DE AGENTES */
+    {
+    width: 80%;
+    border-collapse: collapse;
+    /* Fusiona los bordes de las celdas */
+    text-align: center;
 }
 
 table,
 td,
-th 
+th
+
 /* CUADRICULAS DE AGENTES */
-{
-    border: 4px solid black;
+    {
+    border: 3px solid black;
     /* Borde de 2px de ancho, sólido y negro */
     padding: 1px;
     /* Espaciado interno */
     /* Otros estilos */
 }
 
-#descripción 
+#descripción
+
 /* DESCRIPCIÓN INICIAL DE LA PAGINA */
-{
+    {
     margin-top: 120px;
     margin-left: 250px;
     font-family: Tahoma;
@@ -231,44 +309,39 @@ th
     text-align: left;
 }
 
-
-
-
-.logos
-{
+.logos {
     display: flex;
-    flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
-    padding: 20px; /* Espacio alrededor de los rectángulos */
-    flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
-position: fixed;
-
+    flex-wrap: wrap;
+    /* Los divs se ajustarán automáticamente a la línea siguiente */
+    padding: 20px;
+    /* Espacio alrededor de los rectángulos */
+    flex-grow: 1;
+    /* El contenido tomará el espacio restante */
+    /* BUSCAR FUNCION EXACTA*/
+    position: fixed;
 }
 
-
-#logoduelista
-{
+#logoduelista {
     width: 100px;
     height: 100px;
- padding: 20px;
- margin: 10px;
- /* Espacio entre los cuadrados */
- float: left;
- /* Para que estén uno al lado del otro */
- left: 190px;
- position: fixed;
- top: 260px;
- opacity: 70%;
-
+    padding: 20px;
+    margin: 10px;
+    /* Espacio entre los cuadrados */
+    float: left;
+    /* Para que estén uno al lado del otro */
+    left: 190px;
+    position: fixed;
+    top: 260px;
+    opacity: 70%;
 }
 
-
-
 #logoiniciador
+
 /* CUADRADO INICIADOR */
- {
+    {
     padding: 20px;
     width: 100px;
- height: 100px;
+    height: 100px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -279,15 +352,14 @@ position: fixed;
     opacity: 70%;
 }
 
-
-
 #logocentinela
+
 /* CUADRADO CENTINELA */
-{
+    {
     padding: 20px;
     width: 100px;
- height: 100px;
-    
+    height: 100px;
+
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -296,18 +368,16 @@ position: fixed;
     position: fixed;
     top: 260px;
     opacity: 70%;
-    
 }
 
-
-
 #logocontrolador
+
 /* CUADRADO CONTROLADOR */
- {
+    {
     padding: 20px;
     width: 100px;
     height: 100px;
-    
+
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -315,5 +385,5 @@ position: fixed;
     left: 1090px;
     position: fixed;
     top: 260px;
-   opacity: 70%;
+    opacity: 70%;
 }
