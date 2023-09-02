@@ -24,7 +24,7 @@ img
 
 /* BARRA SUPERIOR CON LOGO */
     {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 70px;
     background-color: white;
@@ -91,7 +91,7 @@ img
     float: left;
     /* Para que estén uno al lado del otro */
     left: 200px;
-    position: fixed;
+    position: absolute;
     top: 300px;
     /* Color azul con 80% de transparencia */
     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
@@ -108,7 +108,7 @@ img
     float: left;
     /* Para que estén uno al lado del otro */
     left: 500px;
-    position: fixed;
+    position: absolute;
     top: 300px;
      /* Color azul con 80% de transparencia */
      background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
@@ -125,7 +125,7 @@ img
     float: left;
     /* Para que estén uno al lado del otro */
     left: 800px;
-    position: fixed;
+    position: absolute;
     top: 300px;
      /* Color azul con 80% de transparencia */
      background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
@@ -143,7 +143,7 @@ img
     float: left;
     /* Para que estén uno al lado del otro */
     left: 1100px;
-    position: fixed;
+    position: absolute;
     top: 300px;
    
     /* Color azul con 80% de transparencia */
@@ -240,7 +240,7 @@ th
     flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
     padding: 20px; /* Espacio alrededor de los rectángulos */
     flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
-position: fixed;
+position: absolute;
 
 }
 
@@ -255,7 +255,7 @@ position: fixed;
  float: left;
  /* Para que estén uno al lado del otro */
  left: 190px;
- position: fixed;
+ position: absolute;
  top: 260px;
  opacity: 70%;
 
@@ -274,7 +274,7 @@ position: fixed;
     float: left;
     /* Para que estén uno al lado del otro */
     left: 490px;
-    position: fixed;
+    position: absolute;
     top: 260px;
     opacity: 70%;
 }
@@ -293,7 +293,7 @@ position: fixed;
     float: left;
     /* Para que estén uno al lado del otro */
     left: 790px;
-    position: fixed;
+    position: absolute;
     top: 260px;
     opacity: 70%;
     
@@ -313,7 +313,27 @@ position: fixed;
     float: left;
     /* Para que estén uno al lado del otro */
     left: 1090px;
-    position: fixed;
+    position: absolute;
     top: 260px;
    opacity: 70%;
+}
+
+
+.mapaconteiner {
+
+    padding: 20px;
+    width: 1200px;
+    height: 320px;
+
+    margin: 10px;
+    /* Espacio entre los cuadrados */
+    float: left;
+    /* Para que estén uno al lado del otro */
+    left: 200px;
+    position: absolute;
+    top: 700px;
+   
+    /* Color azul con 80% de transparencia */
+    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.9));
+
 }
