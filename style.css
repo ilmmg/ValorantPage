@@ -27,7 +27,7 @@ img
 
 button {
     background-color: transparent;
-    border-radius: 3px;
+    border: none;
     cursor: pointer;
 }
 
@@ -42,7 +42,7 @@ button {
     align-items: center;
     background-color: rgba(79, 79, 79, 0.7);
     z-index: 1;
-    visibility: ;
+    visibility:hidden;
 }
 
 .modal-content {
