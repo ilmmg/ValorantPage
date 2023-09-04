@@ -1,29 +1,22 @@
-body /* CONTENIDO PRINCIPAL */  
-{
-width: 1320px;
-height: 720px;
-background-size:cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-display: flex; /* Usamos flexbox para alinear los elementos */
- background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url('https://images2.alphacoders.com/132/1322753.jpeg');
-
-  
-
+body {
+    /* Establece el ancho, la altura y el fondo del cuerpo del documento. También utiliza flexbox para alinear los elementos y establece una imagen de fondo con un gradiente lineal. */
+    width: 1320px;
+    height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url('https://images2.alphacoders.com/132/1322753.jpeg');
 }
 
-img
-
-/* IMAGENES DE LA TABLA */
-    {
+img {
+    /* Establece el ancho y la altura de todas las imágenes en el documento. */
     width: 50px;
     height: 50px;
 }
 
-.barra
-
-/* BARRA SUPERIOR CON LOGO */
-    {
+.barra {
+    /* Establece el estilo de la barra superior con logo. Se posiciona en la parte superior de la página y tiene un fondo blanco. */
     position: absolute;
     width: 100%;
     height: 70px;
@@ -35,25 +28,19 @@ img
     top: 0;
 }
 
-#logo
-
-/* LOGO DE BARRA SUPERIOR */
-    {
+#logo {
+    /* Establece el ancho y la altura del logo en la barra superior. */
     width: 70px;
     height: 70px;
 }
 
-#logo:hover
-
-/* ESCALAR EL LOGO CUANDO APOYES EL MOUSE */
-    {
+#logo:hover {
+    /* Aumenta el tamaño del logo cuando el mouse se coloca sobre él. */
     transform: scale(1.1);
 }
 
-.titulo
-
-/* BARRA LATERAL */
-    {
+.titulo {
+    /* Establece el estilo de la barra lateral. Se posiciona en la parte superior izquierda de la página y tiene un fondo blanco. El texto se escribe verticalmente y se centra. */
     position: fixed;
     top: 0;
     left: 0;
@@ -62,157 +49,119 @@ img
     background-color: white;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    /* COMENTAR */
     white-space: nowrap;
-    /* COMENTAR */
     text-align: center;
     font-family: Tahoma;
     color: red;
     clip-path: polygon(0 0, 100% 0, 90% 80%, 50% 100%, 0% 100%);
-    /* COMENTAR */
 }
 
-.titulo h1
-
-/* TITULO DE BARRA LATERAL */
-    {
+.titulo h1 {
+    /* Establece el tamaño de fuente del título en la barra lateral. */
     font-size: 80px;
 }
 
-.duelistas
-
-/* CUADRADO DUELISTAS */
-    {
+.duelistas {
+    /* Establece el estilo del cuadro de los duelistas. Se posiciona absolutamente y tiene un fondo con un gradiente lineal. */
     padding: 20px;
     width: 250px;
     height: 320px;
     margin: 10px;
-    /* Espacio entre los cuadrados */
     float: left;
-    /* Para que estén uno al lado del otro */
     left: 200px;
     position: absolute;
     top: 300px;
-    /* Color azul con 80% de transparencia */
     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
 }
 
-.iniciador
-/* CUADRADO INICIADOR */
- {
+.iniciador {
+    /* Establece el estilo del cuadro de los iniciadores. Se posiciona absolutamente y tiene un fondo con un gradiente lineal. */
     padding: 20px;
     width: 250px;
     height: 320px;
     margin: 10px;
-    /* Espacio entre los cuadrados */
     float: left;
-    /* Para que estén uno al lado del otro */
     left: 500px;
     position: absolute;
     top: 300px;
-     /* Color azul con 80% de transparencia */
-     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
 }
 
-.centinela 
-/* CUADRADO CENTINELA */
-{
+.centinela {
+    /* Establece el estilo del cuadro de los centinelas. Se posiciona absolutamente y tiene un fondo con un gradiente lineal. */
     padding: 20px;
     width: 250px;
     height: 320px;
     margin: 10px;
-    /* Espacio entre los cuadrados */
     float: left;
-    /* Para que estén uno al lado del otro */
     left: 800px;
     position: absolute;
     top: 300px;
-     /* Color azul con 80% de transparencia */
-     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
 }
 
-.controlador
-/* CUADRADO CONTROLADOR */
- {
+.controlador {
+    /* Establece el estilo del cuadro de los controladores. Se posiciona absolutamente y tiene un fondo con un gradiente lineal. */
     padding: 20px;
     width: 250px;
     height: 320px;
-
     margin: 10px;
-    /* Espacio entre los cuadrados */
     float: left;
-    /* Para que estén uno al lado del otro */
     left: 1100px;
     position: absolute;
     top: 300px;
-   
-    /* Color azul con 80% de transparencia */
     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
-    
-    
-    
 }
 
-.conteiner 
-/* CONTIENE EL CONTEINER2 , LA BARRA SUPERIOR , LA BARRA LATERAL  */{
+.conteiner {
+    /* Contiene el conteiner2, la barra superior y la barra lateral. Utiliza flexbox para distribuir los elementos. */
     display: flex;
-    /* Usamos flexbox para distribuir los elementos */
 }
 
-
-.conteiner2
-/* CONTIENE LOS CUADROS DE AGENTES */
-{
-
-
-	display: flex;
-    flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
-    padding: 20px; /* Espacio alrededor de los rectángulos */
-    flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
+.conteiner2 {
+    /* Contiene los cuadros de agentes. Utiliza flexbox para distribuir los elementos y permite que los elementos se ajusten automáticamente a la línea siguiente. */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-grow: 1;
 }
 
-p 
-/* DESCRIPCIÓN DE ROL */
-{
+p {
+    /* Establece el estilo de la descripción del rol. El texto se centra y se establece la fuente y el color. */
     text-align: center;
     font-family: Tahoma;
     color: white;
 }
 
-h3 
-/* NOMBRE DE AGENTES */{
+h3 {
+    /* Establece el estilo del nombre de los agentes. El texto se centra y se establece la fuente, el color y el tamaño. */
     text-align: center;
     font-family: Tahoma;
     color: white;
     font-size: 25px;
 }
 
-.num 
-/* NUMERO DE ROL */
-{
+.num {
+    /* Establece el estilo del número de rol. El texto se centra y se establece la fuente, el color y el tamaño. */
+    /* NUMERO DE ROL */
     text-align: center;
     font-family: Tahoma;
     color: red;
     font-size: 25px;
 }
 
-
-
-
-table
-/* CUADRICULAS DE AGENTES */
-{
-	width: 80%;
-	border-collapse: collapse; /* Fusiona los bordes de las celdas */
-	text-align: center
-
+table {
+    /* CUADRICULAS DE AGENTES */
+    width: 80%;
+    border-collapse: collapse;
+    /* Fusiona los bordes de las celdas */
+    text-align: center
 }
 
 table,
 td,
-th 
-/* CUADRICULAS DE AGENTES */
-{
+th {
+    /* CUADRICULAS DE AGENTES */
     border: 4px solid black;
     /* Borde de 2px de ancho, sólido y negro */
     padding: 1px;
@@ -220,9 +169,8 @@ th
     /* Otros estilos */
 }
 
-#descripción 
-/* DESCRIPCIÓN INICIAL DE LA PAGINA */
-{
+#descripción {
+    /* DESCRIPCIÓN INICIAL DE LA PAGINA */
     margin-top: 120px;
     margin-left: 250px;
     font-family: Tahoma;
@@ -231,44 +179,37 @@ th
     text-align: left;
 }
 
-
-
-
-.logos
-{
+.logos {
     display: flex;
-    flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
-    padding: 20px; /* Espacio alrededor de los rectángulos */
-    flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
-position: absolute;
-
+    flex-wrap: wrap;
+    /* Los divs se ajustarán automáticamente a la línea siguiente */
+    padding: 20px;
+    /* Espacio alrededor de los rectángulos */
+    flex-grow: 1;
+    /* El contenido tomará el espacio restante */
+    /* BUSCAR FUNCION EXACTA*/
+    position: absolute;
 }
 
-
-#logoduelista
-{
+#logoduelista {
     width: 100px;
     height: 100px;
- padding: 20px;
- margin: 10px;
- /* Espacio entre los cuadrados */
- float: left;
- /* Para que estén uno al lado del otro */
- left: 190px;
- position: absolute;
- top: 260px;
- opacity: 70%;
-
+    padding: 20px;
+    margin: 10px;
+    /* Espacio entre los cuadrados */
+    float: left;
+    /* Para que estén uno al lado del otro */
+    left: 190px;
+    position: absolute;
+    top: 260px;
+    opacity: 70%;
 }
 
-
-
-#logoiniciador
-/* CUADRADO INICIADOR */
- {
+#logoiniciador {
+    /* CUADRADO INICIADOR */
     padding: 20px;
     width: 100px;
- height: 100px;
+    height: 100px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -279,15 +220,11 @@ position: absolute;
     opacity: 70%;
 }
 
-
-
-#logocentinela
-/* CUADRADO CENTINELA */
-{
+#logocentinela {
+    /* CUADRADO CENTINELA */
     padding: 20px;
     width: 100px;
- height: 100px;
-    
+    height: 100px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -296,18 +233,13 @@ position: absolute;
     position: absolute;
     top: 260px;
     opacity: 70%;
-    
 }
 
-
-
-#logocontrolador
-/* CUADRADO CONTROLADOR */
- {
+#logocontrolador {
+    /* CUADRADO CONTROLADOR */
     padding: 20px;
     width: 100px;
     height: 100px;
-    
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -315,16 +247,13 @@ position: absolute;
     left: 1090px;
     position: absolute;
     top: 260px;
-   opacity: 70%;
+    opacity: 70%;
 }
 
-
 .mapaconteiner {
-
     padding: 20px;
     width: 1200px;
     height: 320px;
-
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -332,8 +261,6 @@ position: absolute;
     left: 200px;
     position: absolute;
     top: 700px;
-   
     /* Color azul con 80% de transparencia */
     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.9));
-
 }
