@@ -1,15 +1,25 @@
-body /* CONTENIDO PRINCIPAL */  
-{
-width: 1320px;
-height: 720px;
-background-size:cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-display: flex; /* Usamos flexbox para alinear los elementos */
- background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), url('https://images2.alphacoders.com/132/1322753.jpeg');
 
-  
+html {
+    scroll-behavior: smooth;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+body
+
+/* CONTENIDO PRINCIPAL */
+    {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    /* Usamos flexbox para alinear los elementos */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent),
+        url("https://images2.alphacoders.com/132/1322753.jpeg");
 }
 
 img
@@ -20,20 +30,51 @@ img
     height: 50px;
 }
 
+
+
 .barra
 
 /* BARRA SUPERIOR CON LOGO */
     {
     position: absolute;
+    display: flex;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: white;
     text-align: center;
     display: inline-block;
-    transition: transform 0.2s ease-in-out;
     left: 0;
     top: 0;
+    right: 0;
 }
+
+
+a {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;;
+    font-family: Tahoma;
+    padding: 7px;
+
+}
+
+/* Cambio de estilo en el estado hover */
+a:hover {
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+    color: #fff;
+}
+
+/* Cambio de estilo en el estado activo (cuando se hace clic) */
+a:active {
+    background-color: #555;
+    border: 2px solid #555;
+}
+
+
+
+
+
 
 #logo
 
@@ -45,64 +86,89 @@ img
 
 #logo:hover
 
+	/* ESCALAR EL LOGO CUANDO APOYES EL MOUSE */
+    {
+    transform: scale(1.1);
+}
+
+
+.mapas img:hover
+
 /* ESCALAR EL LOGO CUANDO APOYES EL MOUSE */
     {
     transform: scale(1.1);
 }
 
+
+
 .titulo
 
 /* BARRA LATERAL */
     {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    display: flex;
+       left: 0;
     width: 200px;
-    height: 100%;
+    height: 2400PX;
     background-color: white;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     /* COMENTAR */
     white-space: nowrap;
     /* COMENTAR */
-    text-align: center;
     font-family: Tahoma;
     color: red;
     clip-path: polygon(0 0, 100% 0, 90% 80%, 50% 100%, 0% 100%);
     /* COMENTAR */
 }
 
-.titulo h1
+#tituloagente
 
 /* TITULO DE BARRA LATERAL */
     {
     font-size: 80px;
+     display: flex;
+    margin-bottom: 400px; /* Ajusta la distancia entre los H1 según tus necesidades */
+    margin-top: 250px;
+
 }
 
+
+#titulomapa
+
+{
+font-size: 80px;
+     display: flex;
+    margin-bottom: 20px; /* Ajusta la distancia entre los H1 según tus necesidades */
+
+
+
+}
 .duelistas
 
 /* CUADRADO DUELISTAS */
     {
     padding: 20px;
     width: 250px;
-    height: 320px;
+    height: 360px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
     /* Para que estén uno al lado del otro */
     left: 200px;
-    position: absolute;
+   position: absolute;
     top: 300px;
     /* Color azul con 80% de transparencia */
-    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
 }
 
 .iniciador
+
 /* CUADRADO INICIADOR */
- {
+    {
     padding: 20px;
     width: 250px;
-    height: 320px;
+     height: 360px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -110,16 +176,17 @@ img
     left: 500px;
     position: absolute;
     top: 300px;
-     /* Color azul con 80% de transparencia */
-     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    /* Color azul con 80% de transparencia */
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
 }
 
-.centinela 
+.centinela
+
 /* CUADRADO CENTINELA */
-{
+    {
     padding: 20px;
     width: 250px;
-    height: 320px;
+       height: 360px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
@@ -127,102 +194,118 @@ img
     left: 800px;
     position: absolute;
     top: 300px;
-     /* Color azul con 80% de transparencia */
-     background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+    /* Color azul con 80% de transparencia */
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
 }
 
 .controlador
+
 /* CUADRADO CONTROLADOR */
- {
+    {
     padding: 20px;
     width: 250px;
-    height: 320px;
+       height: 360px;
 
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
     /* Para que estén uno al lado del otro */
     left: 1100px;
-    position: absolute;
+   position: absolute;
     top: 300px;
-   
+
     /* Color azul con 80% de transparencia */
-    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
-    
-    
-    
+   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
 }
 
-.conteiner 
-/* CONTIENE EL CONTEINER2 , LA BARRA SUPERIOR , LA BARRA LATERAL  */{
+.conteiner
+
+/* CONTIENE EL CONTEINER2 , LA BARRA SUPERIOR , LA BARRA LATERAL  */
+    {
     display: flex;
     /* Usamos flexbox para distribuir los elementos */
 }
 
-
 .conteiner2
+
 /* CONTIENE LOS CUADROS DE AGENTES */
-{
-
-
-	display: flex;
-    flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
-    padding: 20px; /* Espacio alrededor de los rectángulos */
-    flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
+    {
+    display: flex;
+    flex-wrap: wrap;
+    /* Los divs se ajustarán automáticamente a la línea siguiente */
+    padding: 20px;
+    /* Espacio alrededor de los rectángulos */
+    flex-grow: 1;
+    /* El contenido tomará el espacio restante */
+    /* BUSCAR FUNCION EXACTA*/
 }
 
-p 
+p
+
 /* DESCRIPCIÓN DE ROL */
-{
+    {
     text-align: center;
     font-family: Tahoma;
     color: white;
 }
 
-h3 
-/* NOMBRE DE AGENTES */{
+h3
+
+/* NOMBRE DE AGENTES */
+    {
     text-align: center;
     font-family: Tahoma;
     color: white;
     font-size: 25px;
 }
 
-.num 
+.num
+
 /* NUMERO DE ROL */
-{
+    {
     text-align: center;
     font-family: Tahoma;
     color: red;
     font-size: 25px;
 }
 
-
-
-
 table
-/* CUADRICULAS DE AGENTES */
-{
-	width: 80%;
-	border-collapse: collapse; /* Fusiona los bordes de las celdas */
-	text-align: center
 
+/* CUADRICULAS DE AGENTES */
+    {
+    width: 80%;
+    border-collapse: collapse;
+    /* Fusiona los bordes de las celdas */
+    text-align: center;
 }
 
 table,
 td,
-th 
+th
+
 /* CUADRICULAS DE AGENTES */
-{
-    border: 4px solid black;
+    {
+    border: 3px solid black;
     /* Borde de 2px de ancho, sólido y negro */
     padding: 1px;
+    margin-left: 25px
     /* Espaciado interno */
     /* Otros estilos */
 }
 
-#descripción 
+
+
+table img:hover
+
+/* ESCALAR EL LOGO CUANDO APOYES EL MOUSE */
+    {
+    transform: scale(1.1);
+}
+
+#descripción
+
 /* DESCRIPCIÓN INICIAL DE LA PAGINA */
-{
+    {
     margin-top: 120px;
     margin-left: 250px;
     font-family: Tahoma;
@@ -231,109 +314,195 @@ th
     text-align: left;
 }
 
-
-
-
-.logos
-{
+.logos {
     display: flex;
-    flex-wrap: wrap; /* Los divs se ajustarán automáticamente a la línea siguiente */
-    padding: 20px; /* Espacio alrededor de los rectángulos */
-    flex-grow: 1; /* El contenido tomará el espacio restante */  /* BUSCAR FUNCION EXACTA*/ 
-position: absolute;
-
+    flex-wrap: wrap;
+    /* Los divs se ajustarán automáticamente a la línea siguiente */
+    padding: 20px;
+    /* Espacio alrededor de los rectángulos */
+    flex-grow: 1;
+    /* El contenido tomará el espacio restante */
+    /* BUSCAR FUNCION EXACTA*/
+   position: absolute;
 }
 
-
-#logoduelista
-{
+#logoduelista {
     width: 100px;
     height: 100px;
- padding: 20px;
- margin: 10px;
- /* Espacio entre los cuadrados */
- float: left;
- /* Para que estén uno al lado del otro */
- left: 190px;
- position: absolute;
- top: 260px;
- opacity: 70%;
-
+    padding: 20px;
+    margin: 10px;
+    /* Espacio entre los cuadrados */
+    float: left;
+    /* Para que estén uno al lado del otro */
+    left: 190px;
+  position: absolute;
+    top: 260px;
+    opacity: 70%;
 }
 
-
-
 #logoiniciador
+
 /* CUADRADO INICIADOR */
- {
+    {
     padding: 20px;
     width: 100px;
- height: 100px;
+    height: 100px;
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
     /* Para que estén uno al lado del otro */
     left: 490px;
-    position: absolute;
+   position: absolute;
     top: 260px;
     opacity: 70%;
 }
 
-
-
 #logocentinela
+
 /* CUADRADO CENTINELA */
-{
+    {
     padding: 20px;
     width: 100px;
- height: 100px;
-    
+    height: 100px;
+
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
     /* Para que estén uno al lado del otro */
     left: 790px;
-    position: absolute;
+  position: absolute;
     top: 260px;
     opacity: 70%;
-    
 }
 
-
-
 #logocontrolador
+
 /* CUADRADO CONTROLADOR */
- {
+    {
     padding: 20px;
     width: 100px;
     height: 100px;
-    
+
     margin: 10px;
     /* Espacio entre los cuadrados */
     float: left;
     /* Para que estén uno al lado del otro */
     left: 1090px;
-    position: absolute;
+  position: absolute;
     top: 260px;
-   opacity: 70%;
+    opacity: 70%;
 }
 
 
-.mapaconteiner {
 
-    padding: 20px;
-    width: 1200px;
-    height: 320px;
 
-    margin: 10px;
-    /* Espacio entre los cuadrados */
-    float: left;
-    /* Para que estén uno al lado del otro */
-    left: 200px;
-    position: absolute;
-    top: 700px;
-   
-    /* Color azul con 80% de transparencia */
-    background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.9));
+.mapas{
+
+display: flex;
+position: absolute;
+width: 1200px;
+height: 1400px;
+background-color: red;
+top:800px;
+left: 220px;
+background: linear-gradient(to bottom, transparent, rgba(60, 60, 60, 0.7));
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.mapas img 
+{
+width: 300px;
+height: 200px;
+border: 5px solid black;
+}
+
+.submapas
+
+{
+width: calc(90.33% - 10px); /* Aproximadamente 1/3 del ancho del contenedor */
+            margin-bottom: 10px; /* Espacio entre los divs */
+            padding: 10px;
+            box-sizing: border-box;
+           background: linear-gradient(to top, transparent, rgba(0, 0, 0, 1.2));
+             display: inline-block;
+
+}
+
+
+.titulomapas
+{
+	color: white;
+}
+
+
+
+
+.mapas img:hover
+
+/* ESCALAR EL LOGO CUANDO APOYES EL MOUSE */
+    {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+#retorno
+{
+display: flex;
+position: absolute;
+width: 30px;
+height: 30px;
+background-color: white;
+top:2200px;
+right: 40px;
+left:1450px;
+bottom: 230px;
+background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+
+}
+
+
+
+#retorno img
+{
+
+width: 20px;
+height: 20px;
+
+}
+
+
+
+
+#piedepagina
+
+ {
+   width: 100%;
+   height: 200px;
+   background-color: white;
+   position: absolute; 
+   display: flex;
+  top:2300px;
+  left:0px;
+right: 0px;
+ text-align: center;
+    display: inline-block;
+}
+
+
+#piedepagina img{
+
+width: 200px;
+height: 140px;
+margin-top: 25px;
+
 
 }
